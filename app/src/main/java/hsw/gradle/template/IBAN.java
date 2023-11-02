@@ -15,6 +15,9 @@ public class IBAN {
         // step 1: IBAN needs to be 18 digits long
         // System.out.println(IBANnumber.length());
 
+        if (IBANnumber.substring(1).equals("DE")) {
+            return false;
+        }
         IBANnumber = this.IBANnumber;
 
         if (IBANnumber.length() != 22) {
